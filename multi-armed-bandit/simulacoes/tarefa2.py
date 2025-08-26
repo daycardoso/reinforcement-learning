@@ -1,3 +1,10 @@
+# Em um multi-armed bandit com 10 alavancas e recompensa base de 0,
+# gerar um gráfico comparando as políticas a seguir. Cada política 
+# deve ser executada 2000 vezes com 1000 tentativas em cada vez:
+# epsilon-greedy atualizado com média amostral com epsilon=0
+# epsilon-greedy atualizado com média amostral com epsilon=0.1
+# epsilon-greedy atualizado com média amostral com epsilon=0.01
+
 import os
 import matplotlib.pyplot as plt
 from environment import Environment

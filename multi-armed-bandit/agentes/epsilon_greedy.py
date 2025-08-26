@@ -41,7 +41,8 @@ class EpsilonGreedyConstantStepsizeAgent(Agent):
         self.step_size = step_size # passo constante
         self.valor_estimado = np.zeros(self.k_arm) #ESTIMATIVA DO VALOR DA AÇÃO
         self.reset()
-        def act(self):
+        
+    def act(self):
           # Escolha da ação sengundo a politica epsilon-gulosa
           if np.random.random() < self.epsilon:
               action = np.random.randint(self.k_arm)
