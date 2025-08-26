@@ -21,7 +21,7 @@ debug_small = os.environ.get('DEBUG_SMALL') == '1'
 if debug_small:
     runs, time_steps = 50, 200
 else:
-    runs, time_steps = 2000, 1000
+    runs, time_steps = 1000, 2000
 
 mean_best_action_counts, mean_rewards = simulate(runs=runs, time=time_steps, agents=agents, environment=env)
 

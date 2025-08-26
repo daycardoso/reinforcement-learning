@@ -9,7 +9,7 @@ class Environment:
     def reset(self):
         if self.seed is not None:
             random.seed(self.seed)
-        # Real reward for each action
+        # Real reward for each action  a= 1, ..., k
         self.q_true = random.randn(self.k) + self.base_reward
         self.best_action = argmax(self.q_true)
 
